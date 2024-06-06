@@ -9,7 +9,6 @@ faker = Faker()
 if __name__ == '__main__':
     with app.app_context():
         print("Seeding database...")
-
         user1=User(username="davekickass", password="abc")
         user2=User(username="skippy12", password="123")
         post1=Blogpost(content='This is Davids\'s first post!', user=user1)
