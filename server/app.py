@@ -11,18 +11,22 @@ from models import User, Blogpost# import your models here!
 # down here below are the routes of my web app
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return 'Welcome to the homepage!'
-
 # this is the admin register section
-@app.route('/adminregister')
+@app.route('/')
 def register():
         return render_template ("register.html")
 
 @app.route('/adminsignup', methods=['GET', 'POST'])
 def signup():
     return render_template("signup.html")
+
+@app.route('/loginpage')
+def userlogin():
+    return render_template('login.html')
+
+@app.route('/home')
+def homepage():
+    return render_template('mainhome.html')
 
 
 @app.route('/blogposting')
@@ -33,15 +37,6 @@ def blog():
 def account():
     return 'hi this is my account how you doing'
 
-# this is the login route
-@app.route('/login',methods=['GET', 'POST'])
-def login():
-  pass
-
-
-@app.get('/')
-def index():
-    return "Hello world"
 
 
 if __name__ == '__main__':
