@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 from app import app
-from models import db, User, Blogpost
+from models import db, User, Blogpost, loginform, registerform, registration
 from faker import Faker
+from werkzeug.security import generate_password_hash
+
 
 faker = Faker()
 

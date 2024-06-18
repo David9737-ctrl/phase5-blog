@@ -7,6 +7,7 @@ from flask_cors import CORS
 from flask_bcrypt import Bcrypt
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 app = Flask(__name__)

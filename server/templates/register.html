@@ -3,29 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wave</title>
+    <title>register</title>
 </head>
 <body>
-    <div class="Wavebox">
-        <h1>Wave</h1>
-    </div>
-    <div class="Welcome">
-        <h3>Join Wave today and unlock the full potential of our dynamic community. By registering, you'll gain exclusive access to personalized content, seamless sharing, and meaningful connections. Click the register button below to start making waves and transforming your online experience!
-        </h3>
-        <a href='/adminsignup'>sign up here if not a user</a>
- naqo9p
-        <a href="/loginpage"> login if already a user</a>
-        <style>
-            .Welcome{
-                width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-            }
-        </style>
-    </div>
+    <h3>this is the sign up page</h3>
+
+    <form methods="POST" action="">
+        {{form.hidden_tag()}}
+        {{form.username}}
+        {{form.password}}
+        {{form.submit}}
+    </form>
+
 </body>
+<a href="/loginpage">already have an account? login here</a>
 </html>
-
-
